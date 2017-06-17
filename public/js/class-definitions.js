@@ -319,7 +319,7 @@ var domains = {
   IPA: 'Ale',
   Lager: 'Strong',
   Heffeweisen: 'German',
-  Stout: ['Thick, Dark'],
+  Stout: ['Thick', 'Dark'],
   Porter: "Bitter",
   Ale: ['Light', 'Golden']
  };
@@ -395,15 +395,18 @@ var domains = {
  //console.log(beers);
 
  function drink(name){
-  console.log('***this is the beer name',name);
-  console.log('***this is the beer property',beers.valueOf(name));
-  console.log('***IPA', beers['IPA']);
+  //console.log('***this is the beer name',name);
+  //console.log('***this is the beer property',beers.valueOf(name));
+  //console.log('***IPA', beers['IPA']);
+  console.log('if their is an array', beers[name]);
 
-  if (beers.hasOwnProperty(name)){
+  if (!('key' in beers) && typeof beers[name] === 'string'){
     return 'This ' + name + ' is ' + beers[name] + '.';
+    } else if(beers[name] instanceof Array) {
+     return 'This ' + name + ' is ' + beers[name][0] + ' and ' + beers[name][1] + '.';
     } else {
-     return false;
-  }
+    return false;
+   }
  }
 
 
