@@ -123,6 +123,12 @@
  *
  */
 
+var domains = {
+ 'ycombinator.com': "198.41.190.47",
+ 'laughingsquid.com': "162.159.247.97",
+ 'slumlordhosting.com': "198.61.179.126",
+ 'jsonformatter.curiousconcept.com': "104.28.5.70"
+};
 
 /* Step 12
  *
@@ -137,6 +143,15 @@
  *   Konqueror  => "konqueror.org"
  *
  */
+
+ var browsers = {
+ Chromium: "google.com",
+ Safari: "apple.com",
+ Opera: "opera.com",
+ Firefox: "mozilla.org",
+ Sleipnir: "fenrir-inc.com",
+ Konqueror: "konqueror.org"
+ };
 
 
 /* Step 13
@@ -156,6 +171,19 @@
  *
  */
 
+ var rainbow = {
+  colors: {
+   red: "#F0280A",
+   orange: "#FF8800",
+   yellow: "#FFDD00",
+   green: "#51AB0C",
+   blue: "#1593ED",
+   indigo: "#5215ED",
+   violet: "#A915ED"
+  },
+  isDouble: true
+ };
+
 
 /* Step 14
  *
@@ -171,6 +199,14 @@
  *
  */
 
+ var linuxFlavors = [
+ "Gentoo",
+ "Fedora",
+ "Debian",
+ "Slackware",
+ "Red Hat",
+ "Bieber Linux"];
+
 
 /* Step 15
  *
@@ -185,6 +221,14 @@
  *
  */
 
+ var DNA = [
+ "nucleatides",
+ "guanine",
+ "adenine",
+ "thymine",
+ "cytosine"
+ ];
+
 
 /* Step 16
  *
@@ -197,6 +241,13 @@
  * Surface      => 320
  *
  */
+
+ var laptopCosts = {
+  MacBook: 1500,
+  Alienware: 2500,
+  HP: 499,
+  Surface: 320
+ };
 
 
 /* Step 17
