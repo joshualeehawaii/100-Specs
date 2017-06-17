@@ -366,15 +366,13 @@ var domains = {
  *
  */
 
- function installLinux(str){
-  if (linuxFlavors.indexOf(str) !== -1){
+ function installLinux(linux){
+  if (linuxFlavors.indexOf(linux) !== -1){
     return true;
-  } else {
-    return false;
-  }
-
+     } else {
+      return false;
+   }
  }
-
 
 /* Step 23
  *
@@ -393,6 +391,20 @@ var domains = {
  * @return {Bool when False, String when True}
  *
  */
+
+ //console.log(beers);
+
+ function drink(name){
+  console.log('***this is the beer name',name);
+  console.log('***this is the beer property',beers.valueOf(name));
+  console.log('***IPA', beers['IPA']);
+
+  if (beers.hasOwnProperty(name)){
+    return 'This ' + name + ' is ' + beers[name] + '.';
+    } else {
+     return false;
+  }
+ }
 
 
 /* Step 24
