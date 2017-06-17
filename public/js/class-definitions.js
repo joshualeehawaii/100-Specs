@@ -366,6 +366,15 @@ var domains = {
  *
  */
 
+ function installLinux(str){
+  if (linuxFlavors.indexOf(str) !== -1){
+    return true;
+  } else {
+    return false;
+  }
+
+ }
+
 
 /* Step 23
  *
