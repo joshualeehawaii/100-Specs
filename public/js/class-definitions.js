@@ -831,11 +831,10 @@ Scientist.prototype.addDiscovery = function(str){
    return 'I discovered ' + this.discoveries + '.';
   } else if (this.discoveries.length === 2){
     return 'I discovered ' + this.discoveries[0] + ' and ' + this.discoveries[1] + '.';
-  } else if (this.discoveries.length === 3){
-    return 'I discovered ' + this.discoveries[0] + ', ' + this.discoveries[1] + ', and ' + this.discoveries[2] + '.';
-  }
+    } else if (this.discoveries.length === 3){
+      return 'I discovered ' + this.discoveries[0] + ', ' + this.discoveries[1] + ', and ' + this.discoveries[2] + '.';
+    }
  };
-
 
 /* Step 36
  *
@@ -1031,6 +1030,11 @@ Scientist.prototype.addDiscovery = function(str){
  * @param {string} gender  male or female
  */
 
+var Animal = function(species, gender){
+  this.species = species;
+  this.gender = gender;
+};
+
 
 /**
  * Step 51
@@ -1040,6 +1044,10 @@ Scientist.prototype.addDiscovery = function(str){
  * @param {string} model The vehicle's model
  */
 
+var Vehicle = function(make, model){
+  this.make = make;
+  this.model = model;
+};
 
 /**
  * Step 52
@@ -1050,6 +1058,14 @@ Scientist.prototype.addDiscovery = function(str){
  * value of the sides property to null.
  *
  */
+
+ var Shape = function(sides){
+  if(sides >= 3){
+   this.sides = sides;
+  } else {
+    this.sides = null;
+  }
+ };
 
 
 /**
