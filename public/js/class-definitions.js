@@ -1403,6 +1403,13 @@ Box.prototype.openBox = function(){
  *
  */
 
+ var junkFood = ["chips", "soda", "ice cream","popcorn","candy"];
+
+ Meal.prototype.containsJunkFood = function(){
+  console.log(this.foods);
+
+ };
+
 
  /* Steps 91 to 100
  *
@@ -1417,10 +1424,10 @@ Box.prototype.openBox = function(){
  * and assign the values to each variable below.
  *
  */
-var warmBloodedAnimal;
-var coldBloodedAnimal;
-var notWarmOrColdAnimal;
 
+var warmBloodedAnimal = new Animal('Monkey', 'male').isWarmBlooded();
+var coldBloodedAnimal = new Animal('Fish', 'male').isWarmBlooded();
+var notWarmOrColdAnimal = new Animal('Trump', 'male').isWarmBlooded();
 
 /* Step 92
  *
@@ -1428,9 +1435,9 @@ var notWarmOrColdAnimal;
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
 
+var streetDriving = new Vehicle('Honda','Civic').drive("Washington Street");
+var forwardDriving = new Vehicle('Honda','Civic').drive("");
 
  /* Step 93
  *
@@ -1438,9 +1445,9 @@ var forwardDriving;
  * and assign the values to each variable below.
  *
  */
-var decagon;
-var polygon;
 
+var decagon = new Shape(10).getType(10);
+var polygon = new Shape(1).getType(1);
 
 /* Step 94
  *
@@ -1448,9 +1455,9 @@ var polygon;
  * and assign the values to each variable below.
  *
  */
-var openAClosedBox;
-var closeAnOpenBox;
 
+var openAClosedBox = new Box('Cat',false).openBox();
+var closeAnOpenBox = new Box('Cat',true).openBox();
 
  /* Step 95
  *
@@ -1458,9 +1465,9 @@ var closeAnOpenBox;
  * and assign the values to each variable below.
  *
  */
-var openAClosedDoor;
-var closeAnOpenDoor;
 
+var openAClosedDoor = new Door(false).openClose();
+var closeAnOpenDoor = new Door(true).openClose();
 
 /* Step 96
  *
@@ -1468,9 +1475,9 @@ var closeAnOpenDoor;
  * and assign the values to each variable below.
  *
  */
-var redShoesSize7;
-var blackShoesSize10;
 
+var redShoesSize7 = new Shoe(7, 'red').findShoes();
+var blackShoesSize10 = new Shoe(10, 'black').findShoes();
 
  /* Step 97
  *
