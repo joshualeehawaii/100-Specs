@@ -545,7 +545,6 @@ var domains = {
   } else {
     return -1;
   }
-
  }
 
 /* Step 29
@@ -560,6 +559,13 @@ var domains = {
  *
  */
 
+ function canTalkAbout(club){
+  if (club === club_name){
+    return  false;
+  } else {
+    return true;
+  }
+ }
 
 /* Step 30
  *
