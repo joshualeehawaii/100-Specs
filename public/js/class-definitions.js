@@ -454,7 +454,6 @@ var domains = {
           '</ul>';
  }
 
-
 /* Step 26
  *
  * Define a function named "favoritePlanet" that
@@ -475,6 +474,16 @@ var domains = {
  *
  */
 
+ var randomPlanet = Math.floor(Math.random()*planets.length);
+
+ function favoritePlanet(planet){
+  //console.log('***parameters', planet);
+    if (planets.indexOf(planet) !== -1){
+      return "I'm from " + planet + ", but I wish I could go to " + planets[randomPlanet] + '.';
+    } else {
+      return planet + ' is not a planet!';
+  }
+}
 
 /* Step 27
  *
