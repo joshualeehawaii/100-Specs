@@ -1239,7 +1239,7 @@ var dinner = new Meal('fish and vegetables');
  */
 
 Vehicle.prototype.drive = function(streetName){
-  console.log(typeof(streetName));
+  //console.log(typeof(streetName));
   if (typeof streetName !== 'string' || streetName === null || streetName === ''){
     return 'Driving forward';
     } else if (typeof streetName === 'string'){
@@ -1265,6 +1265,27 @@ Vehicle.prototype.drive = function(streetName){
  *
  */
 
+Shape.prototype.getType = function(){
+  if (this.sides === 3){
+    return 'triangle';
+  } else if (this.sides === 4){
+    return 'quadrilateral';
+  } else if (this.sides === 5){
+    return 'pentagon';
+  } else if (this.sides === 6){
+    return 'hexagon';
+  } else if (this.sides === 7){
+    return 'heptagon';
+  } else if (this.sides === 8){
+    return 'octagon';
+  } else if (this.sides === 9){
+    return 'nonagon';
+  } else if (this.sides === 10){
+    return 'decagon';
+  } else {
+    return 'Could not determine type';
+  }
+};
 
 /* Step 84
  *
@@ -1275,6 +1296,15 @@ Vehicle.prototype.drive = function(streetName){
  *
  */
 
+Box.prototype.openBox = function(){
+  //console.log(this.isOpen);
+  if(this.isOpen === false){
+    this.isOpen = true;
+    return this.isOpen;
+  } else{
+    return false;
+  }
+};
 
  /* Step 85
  *
@@ -1283,6 +1313,17 @@ Vehicle.prototype.drive = function(streetName){
  * Return true if openClose opens the door, false if openClose closes the door.
  *
  */
+
+ Door.prototype.openClose = function(){
+  console.log(this.isOpen);
+  if (this.isOpen === false){
+    this.isOpen = true;
+    return true;
+  } else if (this.isOpen === true){
+    this.isOpen = false;
+    return false;
+  }
+ };
 
 
 /* Step 86
