@@ -1,3 +1,4 @@
+console.log('****JOSHS CONSOLE IS THE BEST EVER****');
 /* Step 1
  *
  * Declare a variable named "unicorn"
@@ -398,7 +399,7 @@ var domains = {
   //console.log('***this is the beer name',name);
   //console.log('***this is the beer property',beers.valueOf(name));
   //console.log('***IPA', beers['IPA']);
-  console.log('if their is an array', beers[name]);
+  //console.log('if their is an array', beers[name]);
 
   if (!('key' in beers) && typeof beers[name] === 'string'){
     return 'This ' + name + ' is ' + beers[name] + '.';
@@ -439,6 +440,19 @@ var domains = {
  * @return {String}
  *
  */
+
+ function listLivingOrgClass(){
+  //console.log(livingOrganismClassification);
+  return '<ul>' +
+            '<li>' + livingOrganismClassification[0] + '</li>' +
+            '<li>' + livingOrganismClassification[1] + '</li>' +
+            '<li>' + livingOrganismClassification[2] + '</li>' +
+            '<li>' + livingOrganismClassification[3] + '</li>' +
+            '<li>' + livingOrganismClassification[4] + '</li>' +
+            '<li>' + livingOrganismClassification[5] + '</li>' +
+            '<li>' + livingOrganismClassification[6] + '</li>' +
+          '</ul>';
+ }
 
 
 /* Step 26
