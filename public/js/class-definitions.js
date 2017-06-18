@@ -1067,7 +1067,6 @@ var Vehicle = function(make, model){
   }
  };
 
-
 /**
  * Step 53
  *
@@ -1075,6 +1074,11 @@ var Vehicle = function(make, model){
  * @param {anything} contents The contents of the box
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
+
+ var Box = function(contents, isOpen){
+  this.contents = contents;
+  this.isOpen = isOpen;
+ };
 
 
 /**
@@ -1084,6 +1088,9 @@ var Vehicle = function(make, model){
  * @param {boolean} isOpen Whether the door is opened or closed
  */
 
+ var Door = function(isOpen){
+  this.isOpen = isOpen;
+ };
 
 /**
  * Step 55
@@ -1093,6 +1100,10 @@ var Vehicle = function(make, model){
  * @param {string} color The shoe color
  */
 
+var Shoe = function(size, color) {
+  this.size = size;
+  this.color = color;
+};
 
 /**
  * Step 56
@@ -1100,6 +1111,10 @@ var Vehicle = function(make, model){
  * House class
  * @param {number} stories How many stories tall the house is
  */
+
+ var House = function(stories){
+  this.stories = stories;
+ };
 
 
 /**
