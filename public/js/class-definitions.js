@@ -1149,7 +1149,6 @@ var Shoe = function(size, color) {
   this.foods = foods;
  };
 
-
 /**
  * Create a new instance of the Classes you defined above, below!
  * Steps 60-80 (each variable is a 'step')
@@ -1157,8 +1156,11 @@ var Shoe = function(size, color) {
 
 
 // Create 2 different species of animals
-var george;
-var nemo;
+var george = new Animal('Monkey', 'male');
+var nemo = new Animal('Fish', 'male');
+
+
+
 
 // Create 2 different vehicles
 var civic;
