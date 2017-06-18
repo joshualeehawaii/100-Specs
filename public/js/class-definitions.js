@@ -1,4 +1,3 @@
-console.log('****JOSHS CONSOLE IS THE BEST EVER****');
 /* Step 1
  *
  * Declare a variable named "unicorn"
@@ -1521,5 +1520,5 @@ var cookieMonsterBlocked = new Cookie().swipedByCookieMonster();
  * and assign the values to each variable below.
  *
  */
-var badForYou;
-var goodForYou;
+var badForYou = new Meal('chips').containsJunkFood();
+var goodForYou = new Meal('salad').containsJunkFood();
