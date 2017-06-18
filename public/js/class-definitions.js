@@ -409,7 +409,6 @@ var domains = {
    }
  }
 
-
 /* Step 24
  *
  * Define a function named "browseURL" that takes
@@ -421,6 +420,14 @@ var domains = {
  * @return {String if true else return false}
  *
  */
+
+ function browseURL(browser){
+  if (!('key' in browsers) && typeof browsers[browser] === 'string'){
+    return browsers[browser];
+  } else {
+    return false;
+  }
+ }
 
 
 /* Step 25
