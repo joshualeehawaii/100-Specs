@@ -802,6 +802,41 @@ PrincessLeia.prototype.getsInTrouble = function(){
  *
  */
 
+ var Scientist = function(name, money, age, gender){
+  Person.call(this, name, money, age, gender);
+  this.disciplines = [];
+  this.discoveries = [];
+ };
+
+ Scientist.prototype = Object.create(Person.prototype, {
+  constructor: Scientist
+ });
+
+ Scientist.prototype.addDiscipline = function(str){
+  this.disciplines.push(str);
+  return this.disciplines;
+ };
+
+Scientist.prototype.checkDiscipline = function(str){
+  if (this.disciplines.includes(str)){
+    return true;
+  } else {
+    return false;
+  }
+ };
+
+Scientist.prototype.addDiscovery = function(str){
+  this.discoveries.push(str);
+  if (this.discoveries.length === 1){
+   return 'I discovered ' + this.discoveries + '.';
+  } else if (this.discoveries.length === 2){
+    return 'I discovered ' + this.discoveries[0] + ' and ' + this.discoveries[1] + '.';
+  } else if (this.discoveries.length === 3){
+    return 'I discovered ' + this.discoveries[0] + ', ' + this.discoveries[1] + ', and ' + this.discoveries[2] + '.';
+  }
+
+ };
+
 
 /* Step 36
  *
