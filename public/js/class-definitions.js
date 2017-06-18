@@ -1485,8 +1485,8 @@ var blackShoesSize10 = new Shoe(10, 'black').findShoes();
  * and assign the values to each variable below.
  *
  */
-var farTooTallAStory;
-var shortStory;
+var farTooTallAStory = new House(32).isATallStory(32);
+var shortStory = new House(2).isATallStory();
 
 
  /* Step 98
@@ -1495,8 +1495,8 @@ var shortStory;
  * and assign the values to each variable below.
  *
  */
-var kitchenLightsOn;
-var porchLightsOff;
+var kitchenLightsOn = new Lightbulb(false).flipSwitch('on');
+var porchLightsOff = new Lightbulb(true).flipSwitch('off');
 
 
  /* Step 99
