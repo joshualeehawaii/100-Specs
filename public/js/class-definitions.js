@@ -1159,9 +1159,6 @@ var Shoe = function(size, color) {
 var george = new Animal('Monkey', 'male');
 var nemo = new Animal('Fish', 'male');
 
-
-
-
 // Create 2 different vehicles
 var civic = new Vehicle('Honda', 'Civic');
 var forte = new Vehicle('KIA', 'Forte');
@@ -1180,8 +1177,8 @@ var automaticDoor = new Door(true);
 var bankVault = new Door(false);
 
 // Create 2 shoes
-var rubySlippers;
-var dressShoes;
+var rubySlippers = new Shoe(7, 'red');
+var dressShoes = new Shoe(10, 'black');
 
 // Create 2 houses
 var singleStory;
