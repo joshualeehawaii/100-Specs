@@ -1196,7 +1196,6 @@ var gingerbread = new Cookie('gingerbread');
 var breakfast = new Meal('cereal and milk');
 var dinner = new Meal('fish and vegetables');
 
-
  /* Steps 81 to 90
  *
  * Create methods
@@ -1219,6 +1218,17 @@ var dinner = new Meal('fish and vegetables');
  *
  */
 
+ Animal.prototype.isWarmBlooded = function(){
+  if (this.species === 'Fish'){
+    return false;
+  } else if (this.species === 'Monkey'){
+    return true;
+  } else if (this.species === 'Bird') {
+    return true;
+  } else {
+    return 'Could not determine if warm-blooded';
+  }
+ };
 
 /* Step 82
  *
@@ -1228,6 +1238,14 @@ var dinner = new Meal('fish and vegetables');
  *
  */
 
+Vehicle.prototype.drive = function(streetName){
+  console.log(typeof(streetName));
+  if (typeof streetName !== 'string' || streetName === null || streetName === ''){
+    return 'Driving forward';
+    } else if (typeof streetName === 'string'){
+      return 'Driving on ' + streetName;
+    }
+ };
 
  /* Step 83
  *
