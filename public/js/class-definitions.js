@@ -1406,8 +1406,14 @@ Box.prototype.openBox = function(){
  var junkFood = ["chips", "soda", "ice cream","popcorn","candy"];
 
  Meal.prototype.containsJunkFood = function(){
-  console.log(this.foods);
-
+  //console.log(this.foods);
+  for (var i = 0; i <junkFood.length; i++){
+    if (this.foods.indexOf(junkFood[i])!== -1){
+      return true;
+    } else {
+      return false;
+    }
+  }
  };
 
 
@@ -1485,9 +1491,9 @@ var blackShoesSize10 = new Shoe(10, 'black').findShoes();
  * and assign the values to each variable below.
  *
  */
+
 var farTooTallAStory = new House(32).isATallStory(32);
 var shortStory = new House(2).isATallStory();
-
 
  /* Step 98
  *
@@ -1495,9 +1501,9 @@ var shortStory = new House(2).isATallStory();
  * and assign the values to each variable below.
  *
  */
+
 var kitchenLightsOn = new Lightbulb(false).flipSwitch('on');
 var porchLightsOff = new Lightbulb(true).flipSwitch('off');
-
 
  /* Step 99
  *
@@ -1505,9 +1511,9 @@ var porchLightsOff = new Lightbulb(true).flipSwitch('off');
  * and assign the values to each variable below.
  *
  */
-var cookieMonsterPwns;
-var cookieMonsterBlocked;
 
+var cookieMonsterPwns = new Cookie('chocolate').swipedByCookieMonster('Monday');
+var cookieMonsterBlocked = new Cookie().swipedByCookieMonster();
 
  /* Step 100
  *
