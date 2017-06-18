@@ -596,9 +596,6 @@ var domains = {
   return this.color + ': ' + str;
  };
 
-
-
-
 /* Step 31
  *
  * Define an ES5 class named "Garden" with a property for
@@ -626,6 +623,22 @@ var domains = {
  *
  */
 
+ var Garden = function(plantsTotal){
+  this.plantsTotal = plantsTotal;
+  this.isWatered = false;
+ };
+
+ Garden.prototype.water = function(str){
+  this.isWatered = true;
+ };
+
+ Garden.prototype.grow = function(){
+  if (this.isWatered === true){
+    this.plantsTotal += 1;
+  } else {
+    return false;
+  }
+ };
 
 /* Step 32
  *
