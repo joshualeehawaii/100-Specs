@@ -1353,7 +1353,6 @@ Box.prototype.openBox = function(){
   }
  };
 
-
  /* Step 88
  *
  * Declare a Lightbulb method called flipSwitch that accepts a
@@ -1364,6 +1363,15 @@ Box.prototype.openBox = function(){
  *
  */
 
+ Lightbulb.prototype.flipSwitch = function(on){
+  if (on === 'on'){
+    this.isOn = true;
+    return this.isOn;
+  } else {
+    this.isOn = false;
+    return this.isOn;
+  }
+ };
 
  /* Step 89
  *
@@ -1373,6 +1381,13 @@ Box.prototype.openBox = function(){
  *
  */
 
+ Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek){
+  if (this.flavor === 'chocolate' && dayOfTheWeek === 'Monday'){
+    return  true;
+  } else {
+    return false;
+  }
+ };
 
  /* Step 90
  *
