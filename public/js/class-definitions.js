@@ -834,7 +834,6 @@ Scientist.prototype.addDiscovery = function(str){
   } else if (this.discoveries.length === 3){
     return 'I discovered ' + this.discoveries[0] + ', ' + this.discoveries[1] + ', and ' + this.discoveries[2] + '.';
   }
-
  };
 
 
