@@ -588,6 +588,16 @@ var domains = {
  *
  */
 
+ var Pen = function(color){
+  this.color = color;
+ };
+
+ Pen.prototype.write = function(str){
+  return this.color + ': ' + str;
+ };
+
+
+
 
 /* Step 31
  *
