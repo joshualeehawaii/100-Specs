@@ -1315,7 +1315,7 @@ Box.prototype.openBox = function(){
  */
 
  Door.prototype.openClose = function(){
-  console.log(this.isOpen);
+  //console.log(this.isOpen);
   if (this.isOpen === false){
     this.isOpen = true;
     return true;
@@ -1325,7 +1325,6 @@ Box.prototype.openBox = function(){
   }
  };
 
-
 /* Step 86
  *
  * Declare a Shoe method called findShoes that returns a string containing
@@ -1333,6 +1332,9 @@ Box.prototype.openBox = function(){
  *
  */
 
+ Shoe.prototype.findShoes = function(){
+  return 'Found ' + this.color + ' shoes of size ' + this.size;
+ };
 
  /* Step 87
  *
@@ -1342,6 +1344,14 @@ Box.prototype.openBox = function(){
  * storiesTooTall, return true, else return false.
  *
  */
+
+ House.prototype.isATallStory = function(storiesTooTall){
+  if (this.stories >= storiesTooTall){
+    return true;
+  } else {
+    return false;
+  }
+ };
 
 
  /* Step 88
