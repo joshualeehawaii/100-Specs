@@ -1116,7 +1116,6 @@ var Shoe = function(size, color) {
   this.stories = stories;
  };
 
-
 /**
  * Step 57
  *
@@ -1124,6 +1123,9 @@ var Shoe = function(size, color) {
  * @param {boolean} isOn Whether the light is on or off
  */
 
+ var Lightbulb = function(isOn){
+  this.isOn = isOn;
+ };
 
 /**
  * Step 58
@@ -1132,6 +1134,9 @@ var Shoe = function(size, color) {
  * @param {string} flavor The cookie's flavor
  */
 
+ var Cookie = function(flavor){
+  this.flavor = flavor;
+ };
 
 /**
  * Step 59
@@ -1139,6 +1144,10 @@ var Shoe = function(size, color) {
  * Meal class
  * @param {Array} foods All the foods in the meal
  */
+
+ var Meal = function(foods){
+  this.foods = foods;
+ };
 
 
 /**
