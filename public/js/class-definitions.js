@@ -508,6 +508,24 @@ var domains = {
  *
  */
 
+ function Person(name, money, age, gender){
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+ }
+
+ Person.prototype.spendMoney = function(money){
+  //console.log(money);
+  //console.log(this.money);
+  this.money = (this.money - money);
+ };
+
+ Person.prototype.earnMoney = function(money){
+  //console.log(money);
+  //console.log(this.money);
+  this.money = (this.money + money);
+ };
 
 /* Step 28
  *
@@ -521,6 +539,14 @@ var domains = {
  *
  */
 
+ function purchaseLaptop(laptop){
+  if (laptopCosts.hasOwnProperty(laptop)){
+    return laptopCosts[laptop].toString();
+  } else {
+    return -1;
+  }
+
+ }
 
 /* Step 29
  *
